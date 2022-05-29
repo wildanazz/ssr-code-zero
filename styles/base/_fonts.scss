@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Bungee";
+  font-display: auto;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("https://use.typekit.net/af/2cd15c/00000000000000007735b242/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"), 
+       url("https://use.typekit.net/af/2cd15c/00000000000000007735b242/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"), 
+       url("https://use.typekit.net/af/2cd15c/00000000000000007735b242/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+}
+
+@font-face {
+  font-family: 'Iosevka Term Web';
+  font-display: swap;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('#{$font-path}ttf/iosevka-term-light.ttf') format('truetype'), 
+       url('#{$font-path}woff2/iosevka-term-light.woff2') format('woff2');
+}

@@ -1,0 +1,15 @@
+html {
+  scrollbar-color: $primary-color $secondary-color;
+
+  ::-webkit-scrollbar-thumb {
+    background: $primary-color;
+  }
+  
+  ::-webkit-scrollbar {
+    background: $secondary-color;
+  }
+}
+
+body {
+  background: $background fixed;
+}
