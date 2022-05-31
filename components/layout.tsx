@@ -1,6 +1,8 @@
 import { ReactElement } from 'react'
-import Particles from 'react-tsparticles'
+import dynamic from 'next/dynamic'
 import styled from 'styled-components'
+
+const Particles = dynamic(() => import('react-tsparticles'))
 
 const StyledLayout = styled.div`
   position: relative;
