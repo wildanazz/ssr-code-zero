@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import styled from 'styled-components'
 
 const Particles = dynamic(() => import('react-tsparticles'))
+const Navbar = dynamic(() => import('../components/navbar'))
 
 const StyledLayout = styled.div`
   position: relative;
@@ -74,6 +75,7 @@ export default function Layout({
         }}
       />
       {children}
+      <Navbar />
     </StyledLayout>
   )
 }
