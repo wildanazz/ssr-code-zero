@@ -6,7 +6,11 @@ const StyledLayout = styled.div`
   position: relative;
 `
 
-export default function Layout({ children }: { children: ReactElement }) {
+export default function Layout({
+  children,
+}: {
+  children: ReactElement | ReactElement[]
+}) {
   return (
     <StyledLayout>
       <Particles
