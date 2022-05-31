@@ -1,10 +1,14 @@
 import { ReactElement } from 'react'
 import Particles from 'react-tsparticles'
-import styles from './Layout.module.css'
+import styled from 'styled-components'
+
+const StyledLayout = styled.div`
+  position: relative;
+`
 
 export default function Layout({ children }: { children: ReactElement }) {
   return (
-    <div className={styles.container}>
+    <StyledLayout>
       <Particles
         options={{
           background: {
@@ -64,6 +68,6 @@ export default function Layout({ children }: { children: ReactElement }) {
         }}
       />
       {children}
-    </div>
+    </StyledLayout>
   )
 }
