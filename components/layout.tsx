@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { AnimatePresence } from 'framer-motion'
 
 const Particles = dynamic(() => import('react-tsparticles'))
-const Navbar = dynamic(() => import('../components/navbar'))
+const Navbar = dynamic(() => import('./navbar'))
 
 const StyledLayout = styled.div`
   position: relative;
