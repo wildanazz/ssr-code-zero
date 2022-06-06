@@ -3,8 +3,8 @@ import dynamic from 'next/dynamic'
 import styled from 'styled-components'
 import { AnimatePresence } from 'framer-motion'
 
-const Background = dynamic(() => import('./background'))
-const Navbar = dynamic(() => import('./navbar'))
+const Background = dynamic(() => import('./background/background'))
+const Navbar = dynamic(() => import('./navbar/navbar'))
 
 const StyledLayout = styled.div`
   position: relative;
