@@ -1,6 +1,7 @@
 import { ReactElement } from 'react'
 import dynamic from 'next/dynamic'
 import styled from 'styled-components'
+import { AnimatePresence } from 'framer-motion'
 
 const Particles = dynamic(() => import('react-tsparticles'))
 const Navbar = dynamic(() => import('../components/navbar'))
@@ -74,7 +75,13 @@ export default function Layout({
           },
         }}
       />
-      {children}
+      <AnimatePresence
+        initial={false}
+        exitBeforeEnter
+        onExitComplete={() => window.scrollTo(0, 0)}
+      >
+        {children}
+      </AnimatePresence>
       <Navbar />
     </StyledLayout>
   )
