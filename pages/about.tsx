@@ -1,10 +1,11 @@
 import { ReactElement } from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import Layout from '../components/layout'
 
-const StyledAbout = styled.div`
+const StyledAbout = styled(motion.div)`
   position: relative;
 `
 
@@ -51,7 +52,12 @@ const StyledLink = styled.a`
 
 export default function About() {
   return (
-    <StyledAbout>
+    <StyledAbout
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      exit={{ opacity: 0 }}
+    >
       <StyledContainer>
         <StyledContent>
           <StyledTextContainer>
