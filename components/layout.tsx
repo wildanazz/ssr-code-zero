@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { AnimatePresence } from 'framer-motion'
 
 const Background = dynamic(() => import('./background/background'))
+const Social = dynamic(() => import('./social/social'))
 const Navbar = dynamic(() => import('./navbar/navbar'))
 
 type LayoutProps = {
@@ -25,6 +26,7 @@ export default function Layout({ children }: LayoutProps) {
       >
         {children}
       </AnimatePresence>
+      <Social />
       <Navbar />
     </StyledLayout>
   )
